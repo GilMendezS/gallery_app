@@ -10,7 +10,7 @@
           <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-              <li class="active"><a href="{{url('/')}}">Home</a></li>
+              <li class="{{ Request::path() == '/' ? 'active' : '' }}"><a href="{{url('/')}}">Home</a></li>
               <!--li class="has-children">
                 <a href="single.html">Gallery</a>
                 <ul class="dropdown">
@@ -32,8 +32,8 @@
                 </ul>
               </li-->
               <!--li><a href="services.html">Services</a></li-->
-              <li><a href="{{route('about')}}">Acerca de</a></li>
-              <li><a href="{{route('contact')}}">Contacto</a></li>
+              <li class="{{ Request::path() == 'about' ? 'active' : '' }}"><a href="{{route('about')}}">Acerca de</a></li>
+              <li class="{{ Request::path() == 'contact' ? 'active' : '' }}"><a href="{{route('contact')}}">Contacto</a></li>
             </ul>
           </nav>
         </div>
