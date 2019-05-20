@@ -7,7 +7,7 @@
                 <div class="image-wrap">
                 <div class="image-info">
                     <h2 class="mb-3">Categoria</h2>
-                    <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
                 <img src="images/pic-one.jpg" alt="Image">
                 </div>
@@ -16,7 +16,7 @@
                 <div class="image-wrap">
                 <div class="image-info">
                     <h2 class="mb-3">Categoria</h2>
-                    <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
                 <img src="images/pic-two.jpg" alt="Image">
                 </div>
@@ -25,7 +25,7 @@
                 <div class="image-wrap">
                 <div class="image-info">
                     <h2 class="mb-3">Categoria</h2>
-                    <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
                 <img src="images/pic-three.jpg" alt="Image">
                 </div>
@@ -34,7 +34,7 @@
                 <div class="image-wrap">
                 <div class="image-info">
                     <h2 class="mb-3">Categoria</h2>
-                    <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
                 <img src="images/pic-four.jpg" alt="Image">
                 </div>
@@ -43,7 +43,7 @@
                 <div class="image-wrap">
                 <div class="image-info">
                     <h2 class="mb-3">Categoria</h2>
-                    <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
                 <img src="images/pic-five.jpg" alt="Image">
                 </div>
@@ -52,7 +52,7 @@
                 <div class="image-wrap">
                 <div class="image-info">
                     <h2 class="mb-3">Categoria</h2>
-                    <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
                 <img src="images/pic-six.png" alt="Image">
                 </div>
@@ -61,7 +61,7 @@
                 <div class="image-wrap">
                 <div class="image-info">
                     <h2 class="mb-3">Categoria</h2>
-                    <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
                 <img src="images/pic-seven.jpg" alt="Image">
                 </div>
