@@ -32,6 +32,7 @@
                 </ul>
               </li-->
               <!--li><a href="services.html">Services</a></li-->
+              <li><a href="{{route('gallery')}}">Galería</a></li>
               <li class="{{ Request::path() == 'about' ? 'active' : '' }}"><a href="{{route('about')}}">Acerca de</a></li>
               <li class="{{ Request::path() == 'contact' ? 'active' : '' }}"><a href="{{route('contact')}}">Contacto</a></li>
             </ul>

@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('/about', 'PageController@about')->name('about');
 Route::get('/contact', 'PageController@contact')->name('contact');
+Route::get('/gallery', 'PageController@gallery')->name('gallery');
