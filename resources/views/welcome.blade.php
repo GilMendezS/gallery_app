@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
-<div class="container-fluid" data-aos="fade" data-aos-delay="500">
-    <div class="swiper-container images-carousel">
+<div class="container-fluid">
+    <div class="swiper-container images-carousel mt-3">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="image-wrap">

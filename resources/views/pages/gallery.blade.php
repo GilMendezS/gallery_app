@@ -5,7 +5,7 @@
     
 @endsection
 @section('content')
-<div class="container">
+<div class="container-fluid">
   <ul class="nav justify-content-center">
     <li class="nav-item">
       <a class="nav-link showItems" data-item="item300" href="#">$300.00</a>
