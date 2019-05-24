@@ -5,67 +5,41 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="image-wrap">
-                <div class="image-info">
-                    <h2 class="mb-3">Categoria</h2>
-                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
-                </div>
-                <img src="images/pic-one.jpg" alt="Image">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="image-wrap">
-                <div class="image-info">
-                    <h2 class="mb-3">Categoria</h2>
-                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
-                </div>
-                <img src="images/pic-two.jpg" alt="Image">
+                    <div class="image-info">
+                        <h2 class="mb-3">80X50 $300.00</h2>
+                        <a href="{{route('gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
+                    </div>
+                    <img src="{{asset('images/gallery/300/29.jpg')}}" alt="Cuadro">
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="image-wrap">
                 <div class="image-info">
-                    <h2 class="mb-3">Categoria</h2>
-                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
+                    <h2 class="mb-3">90X60 $400.00</h2>
+                    <a href="{{route('gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
-                <img src="images/pic-three.jpg" alt="Image">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="image-wrap">
-                <div class="image-info">
-                    <h2 class="mb-3">Categoria</h2>
-                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
-                </div>
-                <img src="images/pic-four.jpg" alt="Image">
+                <img src="{{asset('images/gallery/400/47.jpg')}}" alt="Cuadro">
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="image-wrap">
                 <div class="image-info">
-                    <h2 class="mb-3">Categoria</h2>
-                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
+                    <h2 class="mb-3">1.1X60 $750</h2>
+                    <a href="{{route('gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
-                <img src="images/pic-five.jpg" alt="Image">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="image-wrap">
-                <div class="image-info">
-                    <h2 class="mb-3">Categoria</h2>
-                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
-                </div>
-                <img src="images/pic-six.png" alt="Image">
+                <img src="{{asset('images/gallery/750/1.jpg')}}" alt="Cuadro">
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="image-wrap">
                 <div class="image-info">
-                    <h2 class="mb-3">Categoria</h2>
-                    <a href="{{asset('/gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
+                    <h2 class="mb-3">1.50X80 $800.00</h2>
+                    <a href="{{route('gallery')}}" class="btn btn-outline-white py-2 px-4">Ver más cuadros</a>
                 </div>
-                <img src="images/pic-seven.jpg" alt="Image">
+                <img src="{{asset('images/gallery/800/11.jpg')}}" alt="Image">
                 </div>
             </div>
+            
         </div>
 
         <div class="swiper-pagination"></div>
