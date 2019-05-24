@@ -31,15 +31,7 @@
         <div id="thumbs">
             <div id="nav-left-thumbs"></div>
             <div id="pics-thumbs">
-                <img src="https://picsum.photos/1024/768/?random" alt="Nature1" />
-                <img src="https://picsum.photos/1024/767/?random" alt="Nature2" />
-                <img src="https://picsum.photos/768/1024/?random" alt="Nature3" />
-                <img src="https://picsum.photos/1023/768/?random" alt="Nature4" />
-                <img src="https://picsum.photos/1024/769/?random" alt="Nature5" />
-                <img src="https://picsum.photos/767/1024/?random" alt="Nature6" />
-                <img src="https://picsum.photos/1021/768/?random" alt="Nature7" />
-                <img src="https://picsum.photos/766/1024/?random" alt="Nature8" />
-                <img src="https://picsum.photos/1023/768/?random" alt="Nature9" />
+                
             </div>
             <div id="nav-right-thumbs"></div>
         </div>
