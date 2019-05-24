@@ -105,8 +105,9 @@
       });
     });
     $(".showItems").on('click', function(){
-      
+      $(".nav-item").removeClass('active');
       var itemsToShow = $(this).data('item');
+      $(this).parent().addClass('active')
       if(itemsToShow){
         console.log(itemsToShow)
         $(".lightboxgallery-gallery").hide();

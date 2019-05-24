@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<div class="site-section" data-aos="fade">
+<div >
         <div class="container-fluid">
           
           <div class="row justify-content-center">
@@ -46,7 +46,7 @@
                     <div class="row form-group">
                       <div class="col-md-12">
                         <label class="text-black" for="message"><i class="fa fa-comment"></i> Mensaje</label> 
-                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Escribe tus comentarios o preguntas aquí...''"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Escribe tus comentarios o preguntas aquí..."></textarea>
                       </div>
                     </div>
     
@@ -62,13 +62,13 @@
                 <div class="col-lg-3 ml-auto">
                   <div class="mb-3 bg-white">
                     <p class="mb-0 font-weight-bold">Dirección</p>
-                    <p class="mb-4">Tuxtla Gutiérrez, Chiapas</p>
+                    <p class="mb-4">Col. Rivera de cerro hueco Calle sta.cruz#241</p>
     
                     <p class="mb-0 font-weight-bold">Telefono</p>
                     <p class="mb-4"><a href="#">+52 961-268-69-36</a></p>
     
                     <p class="mb-0 font-weight-bold">Email</p>
-                    <p class="mb-0"><a href="#">correo@gmail.com</a></p>
+                    <p class="mb-0"><a href="#">montejocuadrosdecorativos@gmail.com</a></p>
     
                   </div>
                   
