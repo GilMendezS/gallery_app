@@ -110,7 +110,7 @@
       if(itemsToShow){
         console.log(itemsToShow)
         $(".lightboxgallery-gallery").hide();
-        $(`#div-${itemsToShow}`).show();
+        $(`#div-${itemsToShow}`).show('slow');
 
       }
     });
