@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <a class="navbar-brand" href="{{url('/')}}">
-      <img src="{{asset('/images/logo.jpeg')}}" width="120" height="45" alt="Cuadros Bethel">
+      <img src="{{asset('/images/logo.png')}}" width="150" height="60" alt="Cuadros Bethel">
       Cuadros Bethel Montejo
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

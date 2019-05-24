@@ -13,7 +13,7 @@
     
               <div class="row mb-5">
                 <div class="col-md-7">
-                  <img src="images/logo.jpeg" alt="Images" class="img-fluid">
+                  <img src="images/logo.png" alt="Images" class="img-fluid">
                 </div>
                 <div class="col-md-4 ml-auto">
                   <h3>En Cuadros Bethel Montejo</h3>
