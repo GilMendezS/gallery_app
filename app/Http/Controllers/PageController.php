@@ -15,4 +15,7 @@ class PageController extends Controller
     public function gallery(){
         return view('pages.gallery');
     }
+    public function gallery2(){
+        return view('pages.gallery2');
+    }
 }

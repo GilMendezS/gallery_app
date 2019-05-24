@@ -29,7 +29,7 @@
     @for ($i = 26; $i < 45; $i++)
       <a class="lightboxgallery-gallery-item item300" target="_blank" href="{{asset("images/gallery/300/$i.jpg")}}"  data-title="$300.00" data-alt="80X50" data-desc="80X50">
         <div>
-          <img style="height: 100px !important;" src="{{asset("images/gallery/300/$i.jpg")}}" title="Cuadro" alt="Cuadro">
+          <img style="max-height:230px;" src="{{asset("images/gallery/300/$i.jpg")}}" title="Cuadro" alt="Cuadro">
           <div class="lightboxgallery-gallery-item-content">
             <span class="lightboxgallery-gallery-item-title">80X50 $300.00</span>
           </div>
@@ -55,7 +55,7 @@
     @for ($i = 11; $i < 18; $i++)
       <a class="lightboxgallery-gallery-item item800" target="_blank" href="{{asset("images/gallery/800/$i.jpg")}}" data-title="$800.00" data-alt="1.50X80" data-desc="1.50X80">
         <div>
-          <img style="height: 100px !important;" src="{{asset("images/gallery/800/$i.jpg")}}" title="Cuadro" alt="Cuadro">
+          <img style="max-height:200px;" src="{{asset("images/gallery/800/$i.jpg")}}" title="Cuadro" alt="Cuadro">
           <div class="lightboxgallery-gallery-item-content">
             <span class="lightboxgallery-gallery-item-title">1.50X80 $800.00</span>
           </div>
@@ -68,7 +68,7 @@
     @for ($i = 18; $i < 26; $i++)
       <a class="lightboxgallery-gallery-item item700" target="_blank" href="{{asset("images/gallery/700/$i.jpg")}}" data-title="$700.00" data-alt="1X70" data-desc="1X70">
         <div>
-          <img style="height: 100px !important;" src="{{asset("images/gallery/700/$i.jpg")}}" title="Cuadro" alt="Cuadro">
+          <img style="max-height:200px;" src="{{asset("images/gallery/700/$i.jpg")}}" title="Cuadro" alt="Cuadro">
           <div class="lightboxgallery-gallery-item-content">
             <span class="lightboxgallery-gallery-item-title">1X70 $700.00</span>
           </div>
@@ -81,7 +81,7 @@
     @for ($i = 45; $i < 57; $i++)
       <a class="lightboxgallery-gallery-item item400" target="_blank" href="{{asset("images/gallery/400/$i.jpg")}}" data-title="$400.00" data-alt="90X60" data-desc="90X60">
         <div>
-          <img style="height: 100px !important;" src="{{asset("images/gallery/400/$i.jpg")}}" title="Cuadro" alt="Cuadro">
+          <img style="" src="{{asset("images/gallery/400/$i.jpg")}}" title="Cuadro" alt="Cuadro">
           <div class="lightboxgallery-gallery-item-content">
             <span class="lightboxgallery-gallery-item-title">90X60 $400.00</span>
           </div>

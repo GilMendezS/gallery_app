@@ -3,7 +3,6 @@
 @section('content')
     <div >
         <div class="container-fluid">
-          
           <div class="row justify-content-center">
             <div class="col-md-7">
               <div class="row mb-5 site-section">
