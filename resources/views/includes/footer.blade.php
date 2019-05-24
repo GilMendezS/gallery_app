@@ -2,8 +2,8 @@
     <div class="container-fluid">
       <div class="row">
        
-        <div class="col-sm-12 col-md-6 offset-md-3">
-            <div id="map" style="height:250px;width:100%;"></div>
+        <div class="col-sm-12">
+            <div id="map" style="height:300px;width:100%;"></div>
         </div>
         <div class="col-sm-12 col-md-6 offset-md-3 mt-3">
             <p class="lead">
@@ -24,7 +24,7 @@
         var uluru = {lat: 16.7303688, lng:  -93.0920443};
         // The map, centered at Uluru
         var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 9, center: uluru});
+            document.getElementById('map'), {zoom: 16, center: uluru});
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({position: uluru, map: map});
       }
