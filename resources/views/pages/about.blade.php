@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class=""  data-aos="fade">
+    <div >
         <div class="container-fluid">
           
           <div class="row justify-content-center">
@@ -14,12 +14,18 @@
     
               <div class="row mb-5">
                 <div class="col-md-7">
-                  <img src="images/about.jpg" alt="Images" class="img-fluid">
+                  <img src="images/logo.jpeg" alt="Images" class="img-fluid">
                 </div>
                 <div class="col-md-4 ml-auto">
-                  <h3>Nuestro trabajo</h3>
-                  <p>
-                    Material que manejamos es litografía con madera de pino y un acabado al
+                  <h3>En Cuadros Bethel Montejo</h3>
+                  <hr>
+                  <p class="lead">
+                      Realizamos litografía con madera de pino y un acabado al oleo.
+                  </p>
+                  <p class="lead">
+                      Manejamos también cuadros personalizados a medida 
+                      (la imagen que pida el cliente que este fuera del catalogo, incluye fotografia)
+                       80x50 | 90x60 | 1x70 | 1.50x80
                   </p>
                 </div>
               </div>
