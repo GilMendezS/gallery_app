@@ -987,7 +987,7 @@ window.Vue = __webpack_require__(35);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(39));
+Vue.component('contact-form', __webpack_require__(39));
 
 var app = new Vue({
   el: '#app'
@@ -44523,7 +44523,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/ExampleComponent.vue"
+Component.options.__file = "resources/assets/js/components/ContactForm.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -44532,9 +44532,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7168fb6a", Component.options)
+    hotAPI.createRecord("data-v-667ae69d", Component.options)
   } else {
-    hotAPI.reload("data-v-7168fb6a", Component.options)
+    hotAPI.reload("data-v-667ae69d", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -44675,10 +44675,82 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
-        console.log('Component mounted.');
+        this.token = $('meta[name="csrf-token"]').attr('content');
+    },
+
+    data: function data() {
+        return {
+            token: '',
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+            messageReceived: '',
+            makingApiCall: false
+        };
+    },
+    methods: {
+        onSubmit: function onSubmit() {
+            var _this = this;
+
+            this.messageReceived = '';
+            this.makingApiCall = true;
+            fetch('/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': this.token
+                },
+                body: JSON.stringify({
+                    name: this.name,
+                    email: this.email,
+                    subject: this.subject,
+                    message: this.message
+                })
+            }).then(function (res) {
+                return res.json();
+            }).then(function (data) {
+                if (data.sucess) {
+                    _this.name = '';
+                    _this.email = '';
+                    _this.subject = '';
+                    _this.message = '';
+                }
+                _this.messageReceived = data.message;
+            }).catch(function (err) {
+                _this.messageReceived = 'Ha surgido un erro al enviar tu mensaje,por favor intentalo mas tarde';
+            }).finally(function () {
+                _this.makingApiCall = false;
+            });
+        }
+    },
+    computed: {
+        invalidForm: function invalidForm() {
+            return this.name == '' || this.email == '' || this.subject == '' || this.message == '';
+        }
     }
 });
 
@@ -44690,30 +44762,205 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "form",
+    {
+      on: {
+        submit: function($event) {
+          $event.preventDefault()
+          return _vm.onSubmit($event)
+        }
+      }
+    },
+    [
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.messageReceived,
+              expression: "messageReceived"
+            }
+          ],
+          staticClass: "alert alert-info",
+          attrs: { role: "alert" }
+        },
+        [_vm._v("\n        " + _vm._s(_vm.messageReceived) + "\n    ")]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "row form-group" }, [
+        _c("div", { staticClass: "col-md-12 mb-3 mb-md-0" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.name,
+                expression: "name"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text", id: "fname" },
+            domProps: { value: _vm.name },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.name = $event.target.value
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row form-group" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.email,
+                expression: "email"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "email", id: "email" },
+            domProps: { value: _vm.email },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.email = $event.target.value
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row form-group" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.subject,
+                expression: "subject"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "subject", id: "subject" },
+            domProps: { value: _vm.subject },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.subject = $event.target.value
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row form-group" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _vm._m(3),
+          _vm._v(" "),
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.message,
+                expression: "message"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: {
+              name: "message",
+              id: "message",
+              cols: "30",
+              rows: "7",
+              placeholder: "Escribe tus comentarios o preguntas aquí..."
+            },
+            domProps: { value: _vm.message },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.message = $event.target.value
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row form-group" }, [
+        _c("div", { staticClass: "col-md-12" }, [
+          _c("input", {
+            staticClass: "btn btn-primary py-2 px-4 text-white",
+            attrs: {
+              disabled: _vm.invalidForm || _vm.makingApiCall,
+              type: "submit",
+              value: "Enviar Mensaje"
+            }
+          })
+        ])
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "panel-body" }, [
-              _vm._v(
-                "\n                    I'm an example component!\n                "
-              )
-            ])
-          ])
-        ])
-      ])
+    return _c("label", { staticClass: "text-black", attrs: { for: "fname" } }, [
+      _c("i", { staticClass: "fa fa-user" }),
+      _vm._v(" Nombre")
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { staticClass: "text-black", attrs: { for: "email" } }, [
+      _c("i", { staticClass: "fa fa-envelope" }),
+      _vm._v(" Email")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "text-black", attrs: { for: "subject" } },
+      [_c("i", { staticClass: "fa fa-bookmark" }), _vm._v(" Asunto")]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "text-black", attrs: { for: "message" } },
+      [_c("i", { staticClass: "fa fa-comment" }), _vm._v(" Mensaje")]
+    )
   }
 ]
 render._withStripped = true
@@ -44721,7 +44968,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7168fb6a", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-667ae69d", module.exports)
   }
 }
 

@@ -4,7 +4,7 @@
     <title>Cuadros Bethel Montejo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
@@ -31,7 +31,7 @@
   </head>
   <body>
   
-  <div class="site-wrap">
+  <div class="site-wrap" id="app">
     @include('includes.mobile-sidebar')
     @include('includes.header')
     @yield('content')
@@ -54,7 +54,8 @@
   <script src="{{asset('js/picturefill.min.js')}}"></script>
   <script src="{{asset('js/lightgallery-all.min.js')}}"></script>
   <script src="{{asset('js/jquery.mousewheel.min.js')}}"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"></script>
+  <script src="{{asset('js/app.js')}}"></script>
   <script src="{{asset('js/main.js')}}"></script>
   @yield('extra-js')
   
