@@ -52,7 +52,7 @@ class ContactController extends Controller
 
             //Recipients
             $mail->setFrom('notificaciones@cuadrosbethelmontejo.com', 'Cuadros Bethel Montejo');
-            $mail->addAddress('gmsdevelopment2018@gmail.com');     // Add a recipient
+            $mail->addAddress('jimb.05.jimb@gmail.com');     // Add a recipient
             
             // Content
             $name = request('name');
@@ -63,7 +63,7 @@ class ContactController extends Controller
             
             $mail->send();
             return response()->json([
-                'message' => 'Tu mensahe ha sido enviado correctamente',
+                'message' => 'Tu mensaje se ha enviado correctamente',
                 'success' => TRUE
             ],200);
         } catch (Exception $e) {
